@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <title>Survey Form</title>
+    <body>
+     <h1 id="title">Siya Cafe Survey Form</h1>
+     <p id="description">Thank You for taking out your valuable time to make us better!</p>
+     <section class="container">
+      <form action="siyacafe.com/survey-form" method="post" id="survey-form">
+       <label id="name-label">Name <input class="input-field block" type="text" id="name" placeholder="Enter your name" required /></label>
+       <label id="email-label">Email Address <input class="input-field block" type="email" id="email" placeholder="Enter your email" required /></label>
+       <label id="number-label">Age <input type="number" class="input-field block" id="number" min="8" max="100" placeholder="Enter your age" required /></label>
+       <legend>What you recommend Siya Cafe to a freind?</legend>
+       <label class="radio-label"><input type="radio" name="recommend" value="Definitely" checked /> Definitely</label>
+       <label class="radio-label"><input type="radio" name="recommend" value="Maybe" /> Maybe</label>
+       <label class="radio-label"><input type="radio" name="recommend" value="Not Sure" /> Not Sure</label>       
+       <legend>What is your favourite Siya Cafe item?</legend>
+       <select required name="favourite-item" id="dropdown">
+        <option value="">Select An Option</option>
+        <option value="1">Coffee Frappuccino</option>
+        <option value="2">Espresso Frappuccino</option>
+        <option value="3">Hazlenut Latte</option>
+        <option value="4">Coffee Hazelnut Crunch Cake</option>
+       </select> 
+       <legend>What would you like to see improved in the Cafe?(Select all that apply)</legend>
+       <label for="food"><input type="checkbox" id="food" name="improvement" value="food"> Food Quality</label>
+       <label for="Lighting"><input type="checkbox" id="Lighting" name="improvement" value="Lighting"> Lighting</label>
+       <label for="Vibes"><input type="checkbox" id="Vibes" name="improvement" value="vibes"> Vibes</label>
+       <label for="Wi-Fi"><input type="checkbox" id="Wi-Fi" name="improvement" value="Wi-Fi"> Wi-Fi</label>
+       <label for="A/C"><input type="checkbox" id="A/C" name="improvement" value="A/C"> Air Conditioning</label>
+       <legend>Any comments or suggestions for this page?</legend>
+       <textarea name="comments" class="comments" placeholder="Enter your comments..." required></textarea>
+       <input type="submit" class="submit" value="Submit" class="submit" id="submit"/>
+      </form>
+     </section>
+    </body>
+</html>
